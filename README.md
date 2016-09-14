@@ -1,2 +1,2 @@
-# Experimento_3
+# Experimento-3
 David es mediocre
