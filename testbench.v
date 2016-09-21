@@ -11,7 +11,7 @@ module testbench;
 	wire [3:0]oLCD_Data;
 	
 	always
-	#10 Clock = ~Clock;
+	#1 Clock = ~Clock;
 	
 	initial
 		begin
