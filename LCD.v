@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ps	
 
 `define STATE_RESET 0
 `define STATE_POWERON_INIT_0_A 1
@@ -59,6 +59,7 @@ module Module_LCD_Control
 		output reg[3:0] oLCD_Data
 	);
 
+	assign oLCD_Enabled = 1;
 	reg rWrite_Enabled;
 	assign oLCD_ReadWrite = 0; //I only Write to the LCD display, never Read from it
 	assign oLCD_StrataFlashControl = 1; //StrataFlash disabled. Full read/write access to LCD
@@ -75,7 +76,7 @@ module Module_LCD_Control
 		begin
 			if (Reset)
 				begin
-					rCurrentState = `STATE_RESET;
+					rCurrentState <= `STATE_RESET;
 					rTimeCount <= 32'b0;
 				end
 			else

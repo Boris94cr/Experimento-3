@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module testbench;
  
 	reg Clock;
@@ -27,3 +29,5 @@ module testbench;
 		.oLCD_ReadWrite(oLCD_ReadWrite),
 		.oLCD_Data(oLCD_Data)
 	);
+	
+endmodule
