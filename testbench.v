@@ -24,7 +24,7 @@ module testbench;
 		.Clock(Clock),
 		.Reset(Reset),
 		.oLCD_Enabled(oLCD_Enabled),
-		.oLCD_RegisterSelect(oLCD_RegisterSelect), //0=Command, 1=Data
+		.oLCD_RegisterSelect(oLCD_RegisterSelect),
 		.oLCD_StrataFlashControl(oLCD_StrataFlashControl),
 		.oLCD_ReadWrite(oLCD_ReadWrite),
 		.oLCD_Data(oLCD_Data)
